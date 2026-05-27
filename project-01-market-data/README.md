@@ -33,3 +33,15 @@ The program demonstrates safe resource management in C++, robust error handling,
 Using vcpkg (recommended):
 ```bash
 vcpkg install curl:x64-windows
+```
+Then pass the toolchain file to CMake:
+```bash
+cmake -B build -DCMAKE_TOOLCHAIN_FILE=[path-to-vcpkg]/scripts/buildsystems/vcpkg.cmake
+```
+Build & Run
+```bash
+cd project-01-market-data
+cmake -B build
+cmake --build build
+./build/market_data   # On Windows: .\build\Debug\market_data.exe
+```
