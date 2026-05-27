@@ -18,6 +18,8 @@
 #include <cmath>
 #include <vector>
 #include <memory>
+#include <numbers>
+
 
 // Abstract base class
 class Shape {
@@ -35,7 +37,7 @@ public:
 class Circle : public Shape {
 public:
     Circle(double r) : radius_(r) {}
-    double area() const override { return M_PI * radius_ * radius_; }
+    double area() const override { return std::numbers::pi * radius_ * radius_; }
     void draw(std::ostream& os) const override {
         os << "Circle(radius=" << radius_ << ")";
     }
