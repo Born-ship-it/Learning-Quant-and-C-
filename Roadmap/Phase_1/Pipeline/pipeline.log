@@ -1,0 +1,396 @@
+2026-06-18 12:13:12,963 - pipeline - INFO - Pipeline started.
+2026-06-18 12:13:12,964 - pipeline - INFO - Fetching FRED data for series: CPIAUCSL
+2026-06-18 12:13:13,298 - pipeline - ERROR - Failed to fetch C: Bad Request.  The series does not exist.
+2026-06-18 12:15:54,203 - pipeline - INFO - Pipeline started.
+2026-06-18 12:15:54,203 - pipeline - INFO - Fetching FRED data for series: GDPC1
+2026-06-18 12:15:54,787 - pipeline - ERROR - Failed to fetch G: Bad Request.  The series does not exist.
+2026-06-18 12:18:28,041 - pipeline - INFO - Pipeline started.
+2026-06-18 12:18:28,041 - pipeline - INFO - Fetching FRED data for series: ()
+2026-06-18 12:18:28,041 - pipeline - INFO - FRED data shape: (0, 0)
+2026-06-18 12:18:28,041 - pipeline - INFO - Fetching Yahoo Finance data for tickers: ('^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX')
+2026-06-18 12:18:28,225 - pipeline - DEBUG - Fetched ^GSPC, 1622 rows
+2026-06-18 12:18:28,478 - pipeline - DEBUG - Fetched AAPL, 1622 rows
+2026-06-18 12:18:28,727 - pipeline - DEBUG - Fetched NVDA, 1622 rows
+2026-06-18 12:18:28,858 - pipeline - DEBUG - Fetched MSFT, 1622 rows
+2026-06-18 12:18:29,038 - pipeline - DEBUG - Fetched AVGO, 1622 rows
+2026-06-18 12:18:29,193 - pipeline - DEBUG - Fetched MU, 1622 rows
+2026-06-18 12:18:29,369 - pipeline - DEBUG - Fetched AMD, 1622 rows
+2026-06-18 12:18:29,542 - pipeline - DEBUG - Fetched INTC, 1622 rows
+2026-06-18 12:18:29,766 - pipeline - DEBUG - Fetched ORCL, 1622 rows
+2026-06-18 12:18:29,907 - pipeline - DEBUG - Fetched AMAT, 1622 rows
+2026-06-18 12:18:30,039 - pipeline - DEBUG - Fetched LRCX, 1622 rows
+2026-06-18 12:18:30,042 - pipeline - INFO - Yahoo data shape: (1622, 11)
+2026-06-18 12:18:30,042 - pipeline - INFO - Cleaning FRED data...
+2026-06-18 12:18:30,042 - pipeline - INFO - FRED clean shape: (0, 0)
+2026-06-18 12:18:30,042 - pipeline - INFO - Cleaning Yahoo data...
+2026-06-18 12:18:30,052 - pipeline - INFO - Yahoo clean shape: (1622, 11)
+2026-06-18 12:18:30,052 - pipeline - INFO - Aligning datasets...
+2026-06-18 12:22:18,597 - pipeline - INFO - Pipeline started.
+2026-06-18 12:22:18,597 - pipeline - INFO - Fetching FRED data for series: ('GDPC1',)
+2026-06-18 12:22:18,901 - pipeline - DEBUG - Fetched GDPC1, 25 observations
+2026-06-18 12:22:18,901 - pipeline - INFO - FRED data shape: (25, 1)
+2026-06-18 12:22:18,902 - pipeline - INFO - Fetching Yahoo Finance data for tickers: ('^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX')
+2026-06-18 12:22:19,053 - pipeline - DEBUG - Fetched ^GSPC, 1622 rows
+2026-06-18 12:22:19,272 - pipeline - DEBUG - Fetched AAPL, 1622 rows
+2026-06-18 12:22:19,437 - pipeline - DEBUG - Fetched NVDA, 1622 rows
+2026-06-18 12:22:19,573 - pipeline - DEBUG - Fetched MSFT, 1622 rows
+2026-06-18 12:22:19,721 - pipeline - DEBUG - Fetched AVGO, 1622 rows
+2026-06-18 12:22:19,911 - pipeline - DEBUG - Fetched MU, 1622 rows
+2026-06-18 12:22:20,054 - pipeline - DEBUG - Fetched AMD, 1622 rows
+2026-06-18 12:22:20,272 - pipeline - DEBUG - Fetched INTC, 1622 rows
+2026-06-18 12:22:20,476 - pipeline - DEBUG - Fetched ORCL, 1622 rows
+2026-06-18 12:22:20,711 - pipeline - DEBUG - Fetched AMAT, 1622 rows
+2026-06-18 12:22:20,901 - pipeline - DEBUG - Fetched LRCX, 1622 rows
+2026-06-18 12:22:20,903 - pipeline - INFO - Yahoo data shape: (1622, 11)
+2026-06-18 12:22:20,903 - pipeline - INFO - Cleaning FRED data...
+2026-06-18 12:22:20,905 - pipeline - INFO - FRED clean shape: (25, 1)
+2026-06-18 12:22:20,905 - pipeline - INFO - Cleaning Yahoo data...
+2026-06-18 12:22:20,915 - pipeline - INFO - Yahoo clean shape: (1622, 11)
+2026-06-18 12:22:20,915 - pipeline - INFO - Aligning datasets...
+2026-06-18 12:22:20,917 - pipeline - INFO - Aligned shape: (25, 12)
+2026-06-18 12:22:20,917 - pipeline - INFO - Generating time series plot to time_series.png
+2026-06-18 12:22:22,167 - pipeline - INFO - Time series plot saved.
+2026-06-18 12:22:22,168 - pipeline - INFO - Computing summary statistics...
+2026-06-18 12:22:22,184 - pipeline - INFO - Running OLS: GDPC1 ~ ['^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:22:22,186 - pipeline - INFO - OLS R-squared: 0.9559
+2026-06-18 12:22:22,192 - pipeline - INFO - Running OLS: ^GSPC ~ ['GDPC1', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:22:22,194 - pipeline - INFO - OLS R-squared: 0.9897
+2026-06-18 12:22:22,200 - pipeline - INFO - Running OLS: AAPL ~ ['GDPC1', '^GSPC', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:22:22,202 - pipeline - INFO - OLS R-squared: 0.9706
+2026-06-18 12:22:22,207 - pipeline - INFO - Running OLS: NVDA ~ ['GDPC1', '^GSPC', 'AAPL', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:22:22,209 - pipeline - INFO - OLS R-squared: 0.9843
+2026-06-18 12:22:22,215 - pipeline - INFO - Running OLS: MSFT ~ ['GDPC1', '^GSPC', 'AAPL', 'NVDA', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:22:22,217 - pipeline - INFO - OLS R-squared: 0.9750
+2026-06-18 12:22:22,222 - pipeline - INFO - Running OLS: AVGO ~ ['GDPC1', '^GSPC', 'AAPL', 'NVDA', 'MSFT', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:22:22,224 - pipeline - INFO - OLS R-squared: 0.9902
+2026-06-18 12:22:22,231 - pipeline - INFO - Running OLS: MU ~ ['GDPC1', '^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:22:22,232 - pipeline - INFO - OLS R-squared: 0.9878
+2026-06-18 12:22:22,238 - pipeline - INFO - Running OLS: AMD ~ ['GDPC1', '^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:22:22,239 - pipeline - INFO - OLS R-squared: 0.9158
+2026-06-18 12:22:22,245 - pipeline - INFO - Running OLS: INTC ~ ['GDPC1', '^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:22:22,246 - pipeline - INFO - OLS R-squared: 0.8694
+2026-06-18 12:22:22,251 - pipeline - INFO - Running OLS: ORCL ~ ['GDPC1', '^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'AMAT', 'LRCX']
+2026-06-18 12:22:22,253 - pipeline - INFO - OLS R-squared: 0.9780
+2026-06-18 12:22:22,258 - pipeline - INFO - Running OLS: AMAT ~ ['GDPC1', '^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'LRCX']
+2026-06-18 12:22:22,260 - pipeline - INFO - OLS R-squared: 0.9661
+2026-06-18 12:22:22,266 - pipeline - INFO - Running OLS: LRCX ~ ['GDPC1', '^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT']
+2026-06-18 12:22:22,268 - pipeline - INFO - OLS R-squared: 0.9928
+2026-06-18 12:22:22,273 - pipeline - INFO - Generating correlation heatmap to correlation.png
+2026-06-18 12:22:22,692 - pipeline - INFO - Heatmap saved.
+2026-06-18 12:22:22,693 - pipeline - INFO - Pipeline finished successfully.
+2026-06-18 12:22:26,502 - pipeline - INFO - Fetching FRED data for series: ('GDPC1',)
+2026-06-18 12:22:26,503 - pipeline - DEBUG - Fetched GDPC1, 3 observations
+2026-06-18 12:22:26,503 - pipeline - INFO - FRED data shape: (3, 1)
+2026-06-18 12:32:18,540 - pipeline - INFO - Pipeline started.
+2026-06-18 12:32:18,540 - pipeline - INFO - Fetching FRED data for series: ('GDPC1',)
+2026-06-18 12:32:18,846 - pipeline - DEBUG - Fetched GDPC1, 25 observations
+2026-06-18 12:32:18,846 - pipeline - INFO - FRED data shape: (25, 1)
+2026-06-18 12:32:18,846 - pipeline - INFO - Fetching Yahoo Finance data for tickers: ('^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX')
+2026-06-18 12:32:19,006 - pipeline - DEBUG - Fetched ^GSPC, 1622 rows
+2026-06-18 12:32:19,263 - pipeline - DEBUG - Fetched AAPL, 1622 rows
+2026-06-18 12:32:19,432 - pipeline - DEBUG - Fetched NVDA, 1622 rows
+2026-06-18 12:32:19,617 - pipeline - DEBUG - Fetched MSFT, 1622 rows
+2026-06-18 12:32:19,815 - pipeline - DEBUG - Fetched AVGO, 1622 rows
+2026-06-18 12:32:20,064 - pipeline - DEBUG - Fetched MU, 1622 rows
+2026-06-18 12:32:20,213 - pipeline - DEBUG - Fetched AMD, 1622 rows
+2026-06-18 12:32:20,408 - pipeline - DEBUG - Fetched INTC, 1622 rows
+2026-06-18 12:32:20,569 - pipeline - DEBUG - Fetched ORCL, 1622 rows
+2026-06-18 12:32:20,787 - pipeline - DEBUG - Fetched AMAT, 1622 rows
+2026-06-18 12:32:20,976 - pipeline - DEBUG - Fetched LRCX, 1622 rows
+2026-06-18 12:32:20,978 - pipeline - INFO - Yahoo data shape: (1622, 11)
+2026-06-18 12:32:20,978 - pipeline - INFO - Cleaning FRED data...
+2026-06-18 12:32:20,980 - pipeline - INFO - FRED clean shape: (25, 1)
+2026-06-18 12:32:20,980 - pipeline - INFO - Cleaning Yahoo data...
+2026-06-18 12:32:20,989 - pipeline - INFO - Yahoo clean shape: (1622, 11)
+2026-06-18 12:32:20,989 - pipeline - INFO - Aligning datasets...
+2026-06-18 12:32:20,991 - pipeline - INFO - Aligned shape: (25, 12)
+2026-06-18 12:32:20,992 - pipeline - INFO - Generating time series plot to time_series.png
+2026-06-18 12:32:21,346 - pipeline - INFO - Time series plot saved.
+2026-06-18 12:32:21,347 - pipeline - INFO - Computing summary statistics...
+2026-06-18 12:32:21,366 - pipeline - INFO - Running OLS: GDPC1 ~ ['^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:32:21,368 - pipeline - INFO - OLS R-squared: 0.9559
+2026-06-18 12:32:21,374 - pipeline - INFO - Running OLS: ^GSPC ~ ['GDPC1', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:32:21,376 - pipeline - INFO - OLS R-squared: 0.9897
+2026-06-18 12:32:21,382 - pipeline - INFO - Running OLS: AAPL ~ ['GDPC1', '^GSPC', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:32:21,384 - pipeline - INFO - OLS R-squared: 0.9706
+2026-06-18 12:32:21,389 - pipeline - INFO - Running OLS: NVDA ~ ['GDPC1', '^GSPC', 'AAPL', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:32:21,391 - pipeline - INFO - OLS R-squared: 0.9843
+2026-06-18 12:32:21,397 - pipeline - INFO - Running OLS: MSFT ~ ['GDPC1', '^GSPC', 'AAPL', 'NVDA', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:32:21,399 - pipeline - INFO - OLS R-squared: 0.9750
+2026-06-18 12:32:21,404 - pipeline - INFO - Running OLS: AVGO ~ ['GDPC1', '^GSPC', 'AAPL', 'NVDA', 'MSFT', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:32:21,405 - pipeline - INFO - OLS R-squared: 0.9902
+2026-06-18 12:32:21,411 - pipeline - INFO - Running OLS: MU ~ ['GDPC1', '^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:32:21,413 - pipeline - INFO - OLS R-squared: 0.9878
+2026-06-18 12:32:21,430 - pipeline - INFO - Running OLS: AMD ~ ['GDPC1', '^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:32:21,434 - pipeline - INFO - OLS R-squared: 0.9158
+2026-06-18 12:32:21,442 - pipeline - INFO - Running OLS: INTC ~ ['GDPC1', '^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:32:21,444 - pipeline - INFO - OLS R-squared: 0.8694
+2026-06-18 12:32:21,450 - pipeline - INFO - Running OLS: ORCL ~ ['GDPC1', '^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'AMAT', 'LRCX']
+2026-06-18 12:32:21,453 - pipeline - INFO - OLS R-squared: 0.9780
+2026-06-18 12:32:21,459 - pipeline - INFO - Running OLS: AMAT ~ ['GDPC1', '^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'LRCX']
+2026-06-18 12:32:21,460 - pipeline - INFO - OLS R-squared: 0.9661
+2026-06-18 12:32:21,466 - pipeline - INFO - Running OLS: LRCX ~ ['GDPC1', '^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT']
+2026-06-18 12:32:21,468 - pipeline - INFO - OLS R-squared: 0.9928
+2026-06-18 12:32:21,473 - pipeline - INFO - Generating correlation heatmap to correlation.png
+2026-06-18 12:32:21,860 - pipeline - INFO - Heatmap saved.
+2026-06-18 12:32:21,860 - pipeline - INFO - Pipeline finished successfully.
+2026-06-18 12:32:25,483 - pipeline - INFO - Fetching FRED data for series: ('GDPC1',)
+2026-06-18 12:32:25,483 - pipeline - DEBUG - Fetched GDPC1, 3 observations
+2026-06-18 12:32:25,484 - pipeline - INFO - FRED data shape: (3, 1)
+2026-06-18 12:36:13,017 - pipeline - INFO - Pipeline started.
+2026-06-18 12:36:13,017 - pipeline - INFO - Fetching FRED data for series: ('GDPC1',)
+2026-06-18 12:36:13,330 - pipeline - DEBUG - Fetched GDPC1, 25 observations
+2026-06-18 12:36:13,330 - pipeline - INFO - FRED data shape: (25, 1)
+2026-06-18 12:36:13,330 - pipeline - INFO - Fetching Yahoo Finance data for tickers: ('^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX')
+2026-06-18 12:36:13,488 - pipeline - DEBUG - Fetched ^GSPC, 1622 rows
+2026-06-18 12:36:13,716 - pipeline - DEBUG - Fetched AAPL, 1622 rows
+2026-06-18 12:36:13,975 - pipeline - DEBUG - Fetched NVDA, 1622 rows
+2026-06-18 12:36:14,179 - pipeline - DEBUG - Fetched MSFT, 1622 rows
+2026-06-18 12:36:14,433 - pipeline - DEBUG - Fetched AVGO, 1622 rows
+2026-06-18 12:36:14,606 - pipeline - DEBUG - Fetched MU, 1622 rows
+2026-06-18 12:36:14,742 - pipeline - DEBUG - Fetched AMD, 1622 rows
+2026-06-18 12:36:14,996 - pipeline - DEBUG - Fetched INTC, 1622 rows
+2026-06-18 12:36:15,146 - pipeline - DEBUG - Fetched ORCL, 1622 rows
+2026-06-18 12:36:15,357 - pipeline - DEBUG - Fetched AMAT, 1622 rows
+2026-06-18 12:36:15,528 - pipeline - DEBUG - Fetched LRCX, 1622 rows
+2026-06-18 12:36:15,531 - pipeline - INFO - Yahoo data shape: (1622, 11)
+2026-06-18 12:36:15,531 - pipeline - INFO - Cleaning FRED data...
+2026-06-18 12:36:15,533 - pipeline - INFO - FRED clean shape: (25, 1)
+2026-06-18 12:36:15,533 - pipeline - INFO - Cleaning Yahoo data...
+2026-06-18 12:36:15,541 - pipeline - INFO - Yahoo clean shape: (1622, 11)
+2026-06-18 12:36:15,541 - pipeline - INFO - Aligning datasets...
+2026-06-18 12:36:15,543 - pipeline - INFO - Aligned shape: (25, 12)
+2026-06-18 12:36:15,544 - pipeline - INFO - Generating time series plot to time_series.png
+2026-06-18 12:36:15,905 - pipeline - INFO - Time series plot saved.
+2026-06-18 12:36:15,908 - pipeline - INFO - Computing summary statistics...
+2026-06-18 12:36:15,924 - pipeline - INFO - Running OLS: GDPC1 ~ ['^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:36:15,926 - pipeline - INFO - OLS R-squared: 0.9559
+2026-06-18 12:36:15,932 - pipeline - INFO - Running OLS: ^GSPC ~ ['GDPC1', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:36:15,933 - pipeline - INFO - OLS R-squared: 0.9897
+2026-06-18 12:36:15,938 - pipeline - INFO - Running OLS: AAPL ~ ['GDPC1', '^GSPC', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:36:15,940 - pipeline - INFO - OLS R-squared: 0.9706
+2026-06-18 12:36:15,946 - pipeline - INFO - Running OLS: NVDA ~ ['GDPC1', '^GSPC', 'AAPL', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:36:15,948 - pipeline - INFO - OLS R-squared: 0.9843
+2026-06-18 12:36:15,953 - pipeline - INFO - Running OLS: MSFT ~ ['GDPC1', '^GSPC', 'AAPL', 'NVDA', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:36:15,955 - pipeline - INFO - OLS R-squared: 0.9750
+2026-06-18 12:36:15,961 - pipeline - INFO - Running OLS: AVGO ~ ['GDPC1', '^GSPC', 'AAPL', 'NVDA', 'MSFT', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:36:15,963 - pipeline - INFO - OLS R-squared: 0.9902
+2026-06-18 12:36:15,968 - pipeline - INFO - Running OLS: MU ~ ['GDPC1', '^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:36:15,970 - pipeline - INFO - OLS R-squared: 0.9878
+2026-06-18 12:36:15,976 - pipeline - INFO - Running OLS: AMD ~ ['GDPC1', '^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:36:15,977 - pipeline - INFO - OLS R-squared: 0.9158
+2026-06-18 12:36:15,983 - pipeline - INFO - Running OLS: INTC ~ ['GDPC1', '^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:36:15,984 - pipeline - INFO - OLS R-squared: 0.8694
+2026-06-18 12:36:15,990 - pipeline - INFO - Running OLS: ORCL ~ ['GDPC1', '^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'AMAT', 'LRCX']
+2026-06-18 12:36:15,992 - pipeline - INFO - OLS R-squared: 0.9780
+2026-06-18 12:36:15,998 - pipeline - INFO - Running OLS: AMAT ~ ['GDPC1', '^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'LRCX']
+2026-06-18 12:36:15,999 - pipeline - INFO - OLS R-squared: 0.9661
+2026-06-18 12:36:16,005 - pipeline - INFO - Running OLS: LRCX ~ ['GDPC1', '^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT']
+2026-06-18 12:36:16,007 - pipeline - INFO - OLS R-squared: 0.9928
+2026-06-18 12:36:16,012 - pipeline - INFO - Generating correlation heatmap to correlation.png
+2026-06-18 12:36:16,403 - pipeline - INFO - Heatmap saved.
+2026-06-18 12:36:16,403 - pipeline - INFO - Pipeline finished successfully.
+2026-06-18 12:36:19,857 - pipeline - INFO - Fetching FRED data for series: ('GDPC1',)
+2026-06-18 12:36:19,858 - pipeline - DEBUG - Fetched GDPC1, 3 observations
+2026-06-18 12:36:19,858 - pipeline - INFO - FRED data shape: (3, 1)
+2026-06-18 12:42:10,856 - pipeline - INFO - Pipeline started.
+2026-06-18 12:42:10,856 - pipeline - INFO - Fetching FRED data for series: ()
+2026-06-18 12:42:10,856 - pipeline - INFO - FRED data shape: (0, 0)
+2026-06-18 12:42:10,856 - pipeline - INFO - Fetching Yahoo Finance data for tickers: ('^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX')
+2026-06-18 12:42:10,974 - pipeline - DEBUG - Fetched ^GSPC, 1622 rows
+2026-06-18 12:42:11,287 - pipeline - DEBUG - Fetched AAPL, 1622 rows
+2026-06-18 12:42:11,523 - pipeline - DEBUG - Fetched NVDA, 1622 rows
+2026-06-18 12:42:13,621 - pipeline - DEBUG - Fetched MSFT, 1622 rows
+2026-06-18 12:42:14,140 - pipeline - DEBUG - Fetched AVGO, 1622 rows
+2026-06-18 12:42:14,463 - pipeline - DEBUG - Fetched MU, 1622 rows
+2026-06-18 12:42:14,601 - pipeline - DEBUG - Fetched AMD, 1622 rows
+2026-06-18 12:42:14,784 - pipeline - DEBUG - Fetched INTC, 1622 rows
+2026-06-18 12:42:14,924 - pipeline - DEBUG - Fetched ORCL, 1622 rows
+2026-06-18 12:42:15,102 - pipeline - DEBUG - Fetched AMAT, 1622 rows
+2026-06-18 12:42:15,275 - pipeline - DEBUG - Fetched LRCX, 1622 rows
+2026-06-18 12:42:15,277 - pipeline - INFO - Yahoo data shape: (1622, 11)
+2026-06-18 12:42:15,277 - pipeline - INFO - Cleaning FRED data...
+2026-06-18 12:42:15,278 - pipeline - INFO - FRED clean shape: (0, 0)
+2026-06-18 12:42:15,278 - pipeline - INFO - Cleaning Yahoo data...
+2026-06-18 12:42:15,287 - pipeline - INFO - Yahoo clean shape: (1622, 11)
+2026-06-18 12:42:15,287 - pipeline - INFO - Aligning datasets...
+2026-06-18 12:48:25,028 - pipeline - INFO - Pipeline started.
+2026-06-18 12:48:25,028 - pipeline - INFO - Fetching FRED data for series: ()
+2026-06-18 12:48:25,028 - pipeline - INFO - FRED data shape: (0, 0)
+2026-06-18 12:48:25,028 - pipeline - INFO - Fetching Yahoo Finance data for tickers: ('^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX')
+2026-06-18 12:48:25,199 - pipeline - DEBUG - Fetched ^GSPC, 1622 rows
+2026-06-18 12:48:25,415 - pipeline - DEBUG - Fetched AAPL, 1622 rows
+2026-06-18 12:48:25,562 - pipeline - DEBUG - Fetched NVDA, 1622 rows
+2026-06-18 12:48:25,715 - pipeline - DEBUG - Fetched MSFT, 1622 rows
+2026-06-18 12:48:25,925 - pipeline - DEBUG - Fetched AVGO, 1622 rows
+2026-06-18 12:48:26,079 - pipeline - DEBUG - Fetched MU, 1622 rows
+2026-06-18 12:48:26,213 - pipeline - DEBUG - Fetched AMD, 1622 rows
+2026-06-18 12:48:26,399 - pipeline - DEBUG - Fetched INTC, 1622 rows
+2026-06-18 12:48:26,581 - pipeline - DEBUG - Fetched ORCL, 1622 rows
+2026-06-18 12:48:26,847 - pipeline - DEBUG - Fetched AMAT, 1622 rows
+2026-06-18 12:48:27,121 - pipeline - DEBUG - Fetched LRCX, 1622 rows
+2026-06-18 12:48:27,123 - pipeline - INFO - Yahoo data shape: (1622, 11)
+2026-06-18 12:48:27,123 - pipeline - INFO - Cleaning FRED data...
+2026-06-18 12:48:27,124 - pipeline - INFO - FRED clean shape: (0, 0)
+2026-06-18 12:48:27,124 - pipeline - INFO - Cleaning Yahoo data...
+2026-06-18 12:48:27,145 - pipeline - INFO - Yahoo clean shape: (1622, 11)
+2026-06-18 12:48:27,145 - pipeline - WARNING - FRED data is empty after cleaning.
+2026-06-18 12:48:27,146 - pipeline - INFO - Generating time series plot to time_series.png
+2026-06-18 12:48:28,031 - pipeline - INFO - Time series plot saved.
+2026-06-18 12:48:28,032 - pipeline - INFO - Computing summary statistics...
+2026-06-18 12:48:28,065 - pipeline - INFO - Running OLS: ^GSPC ~ ['AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:48:28,070 - pipeline - INFO - OLS R-squared: 0.9826
+2026-06-18 12:48:28,076 - pipeline - INFO - Running OLS: AAPL ~ ['^GSPC', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:48:28,079 - pipeline - INFO - OLS R-squared: 0.9464
+2026-06-18 12:48:28,084 - pipeline - INFO - Running OLS: NVDA ~ ['^GSPC', 'AAPL', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:48:28,086 - pipeline - INFO - OLS R-squared: 0.9835
+2026-06-18 12:48:28,095 - pipeline - INFO - Running OLS: MSFT ~ ['^GSPC', 'AAPL', 'NVDA', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:48:28,101 - pipeline - INFO - OLS R-squared: 0.9534
+2026-06-18 12:48:28,122 - pipeline - INFO - Running OLS: AVGO ~ ['^GSPC', 'AAPL', 'NVDA', 'MSFT', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:48:28,135 - pipeline - INFO - OLS R-squared: 0.9881
+2026-06-18 12:48:28,154 - pipeline - INFO - Running OLS: MU ~ ['^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:48:28,168 - pipeline - INFO - OLS R-squared: 0.9568
+2026-06-18 12:48:28,185 - pipeline - INFO - Running OLS: AMD ~ ['^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:48:28,188 - pipeline - INFO - OLS R-squared: 0.9291
+2026-06-18 12:48:28,220 - pipeline - INFO - Running OLS: INTC ~ ['^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:48:28,231 - pipeline - INFO - OLS R-squared: 0.7066
+2026-06-18 12:48:28,241 - pipeline - INFO - Running OLS: ORCL ~ ['^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'AMAT', 'LRCX']
+2026-06-18 12:48:28,247 - pipeline - INFO - OLS R-squared: 0.9510
+2026-06-18 12:48:28,267 - pipeline - INFO - Running OLS: AMAT ~ ['^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'LRCX']
+2026-06-18 12:48:28,271 - pipeline - INFO - OLS R-squared: 0.9679
+2026-06-18 12:48:28,301 - pipeline - INFO - Running OLS: LRCX ~ ['^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT']
+2026-06-18 12:48:28,310 - pipeline - INFO - OLS R-squared: 0.9836
+2026-06-18 12:48:28,324 - pipeline - INFO - Generating correlation heatmap to correlation.png
+2026-06-18 12:48:29,065 - pipeline - INFO - Heatmap saved.
+2026-06-18 12:48:29,065 - pipeline - INFO - Pipeline finished successfully.
+2026-06-18 12:48:32,528 - pipeline - INFO - Fetching FRED data for series: ('GDPC1',)
+2026-06-18 12:48:32,529 - pipeline - DEBUG - Fetched GDPC1, 3 observations
+2026-06-18 12:48:32,529 - pipeline - INFO - FRED data shape: (3, 1)
+2026-06-18 12:57:30,515 - pipeline - INFO - Pipeline started.
+2026-06-18 12:57:30,515 - pipeline - INFO - Fetching FRED data for series: ()
+2026-06-18 12:57:30,515 - pipeline - INFO - FRED data shape: (0, 0)
+2026-06-18 12:57:30,515 - pipeline - INFO - Fetching Yahoo Finance data for tickers: ('^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX')
+2026-06-18 12:57:30,691 - pipeline - DEBUG - Fetched ^GSPC, 1622 rows
+2026-06-18 12:57:30,970 - pipeline - DEBUG - Fetched AAPL, 1622 rows
+2026-06-18 12:57:31,171 - pipeline - DEBUG - Fetched NVDA, 1622 rows
+2026-06-18 12:57:31,340 - pipeline - DEBUG - Fetched MSFT, 1622 rows
+2026-06-18 12:57:31,495 - pipeline - DEBUG - Fetched AVGO, 1622 rows
+2026-06-18 12:57:31,713 - pipeline - DEBUG - Fetched MU, 1622 rows
+2026-06-18 12:57:31,891 - pipeline - DEBUG - Fetched AMD, 1622 rows
+2026-06-18 12:57:32,041 - pipeline - DEBUG - Fetched INTC, 1622 rows
+2026-06-18 12:57:32,200 - pipeline - DEBUG - Fetched ORCL, 1622 rows
+2026-06-18 12:57:32,372 - pipeline - DEBUG - Fetched AMAT, 1622 rows
+2026-06-18 12:57:32,540 - pipeline - DEBUG - Fetched LRCX, 1622 rows
+2026-06-18 12:57:32,542 - pipeline - INFO - Yahoo data shape: (1622, 11)
+2026-06-18 12:57:32,543 - pipeline - INFO - Cleaning FRED data...
+2026-06-18 12:57:32,543 - pipeline - INFO - FRED clean shape: (0, 0)
+2026-06-18 12:57:32,543 - pipeline - INFO - Cleaning Yahoo data...
+2026-06-18 12:57:32,553 - pipeline - INFO - Yahoo clean shape: (1622, 11)
+2026-06-18 12:57:32,553 - pipeline - WARNING - FRED data is empty after cleaning.
+2026-06-18 12:57:32,553 - pipeline - INFO - Generating time series plot to time_series.png
+2026-06-18 12:57:33,003 - pipeline - INFO - Time series plot saved.
+2026-06-18 12:57:33,004 - pipeline - INFO - Computing summary statistics...
+2026-06-18 12:57:33,030 - pipeline - INFO - Running OLS: ^GSPC ~ ['AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:57:33,034 - pipeline - INFO - OLS R-squared: 0.9826
+2026-06-18 12:57:33,044 - pipeline - INFO - Generating correlation heatmap to correlation.png
+2026-06-18 12:57:33,409 - pipeline - INFO - Heatmap saved.
+2026-06-18 12:57:33,409 - pipeline - INFO - Pipeline finished successfully.
+2026-06-18 12:57:36,688 - pipeline - INFO - Fetching FRED data for series: ('GDPC1',)
+2026-06-18 12:57:36,688 - pipeline - DEBUG - Fetched GDPC1, 3 observations
+2026-06-18 12:57:36,688 - pipeline - INFO - FRED data shape: (3, 1)
+2026-06-18 12:58:19,726 - pipeline - INFO - Pipeline started.
+2026-06-18 12:58:19,727 - pipeline - INFO - Fetching FRED data for series: ()
+2026-06-18 12:58:19,727 - pipeline - INFO - FRED data shape: (0, 0)
+2026-06-18 12:58:19,727 - pipeline - INFO - Fetching Yahoo Finance data for tickers: ('^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX')
+2026-06-18 12:58:19,823 - pipeline - DEBUG - Fetched ^GSPC, 866 rows
+2026-06-18 12:58:19,965 - pipeline - DEBUG - Fetched AAPL, 866 rows
+2026-06-18 12:58:20,121 - pipeline - DEBUG - Fetched NVDA, 866 rows
+2026-06-18 12:58:20,303 - pipeline - DEBUG - Fetched MSFT, 866 rows
+2026-06-18 12:58:20,465 - pipeline - DEBUG - Fetched AVGO, 866 rows
+2026-06-18 12:58:20,637 - pipeline - DEBUG - Fetched MU, 866 rows
+2026-06-18 12:58:20,727 - pipeline - DEBUG - Fetched AMD, 866 rows
+2026-06-18 12:58:20,993 - pipeline - DEBUG - Fetched INTC, 866 rows
+2026-06-18 12:58:21,099 - pipeline - DEBUG - Fetched ORCL, 866 rows
+2026-06-18 12:58:21,268 - pipeline - DEBUG - Fetched AMAT, 866 rows
+2026-06-18 12:58:21,457 - pipeline - DEBUG - Fetched LRCX, 866 rows
+2026-06-18 12:58:21,459 - pipeline - INFO - Yahoo data shape: (866, 11)
+2026-06-18 12:58:21,459 - pipeline - INFO - Cleaning FRED data...
+2026-06-18 12:58:21,459 - pipeline - INFO - FRED clean shape: (0, 0)
+2026-06-18 12:58:21,459 - pipeline - INFO - Cleaning Yahoo data...
+2026-06-18 12:58:21,468 - pipeline - INFO - Yahoo clean shape: (866, 11)
+2026-06-18 12:58:21,468 - pipeline - WARNING - FRED data is empty after cleaning.
+2026-06-18 12:58:21,468 - pipeline - INFO - Generating time series plot to time_series.png
+2026-06-18 12:58:21,869 - pipeline - INFO - Time series plot saved.
+2026-06-18 12:58:21,869 - pipeline - INFO - Computing summary statistics...
+2026-06-18 12:58:21,888 - pipeline - INFO - Running OLS: ^GSPC ~ ['AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 12:58:21,890 - pipeline - INFO - OLS R-squared: 0.9898
+2026-06-18 12:58:21,896 - pipeline - INFO - Generating correlation heatmap to correlation.png
+2026-06-18 12:58:22,266 - pipeline - INFO - Heatmap saved.
+2026-06-18 12:58:22,266 - pipeline - INFO - Pipeline finished successfully.
+2026-06-18 12:58:24,655 - pipeline - INFO - Fetching FRED data for series: ('GDPC1',)
+2026-06-18 12:58:24,655 - pipeline - DEBUG - Fetched GDPC1, 3 observations
+2026-06-18 12:58:24,655 - pipeline - INFO - FRED data shape: (3, 1)
+2026-06-18 13:00:12,358 - pipeline - INFO - Pipeline started.
+2026-06-18 13:00:12,358 - pipeline - INFO - Fetching FRED data for series: ()
+2026-06-18 13:00:12,359 - pipeline - INFO - FRED data shape: (0, 0)
+2026-06-18 13:00:12,359 - pipeline - INFO - Fetching Yahoo Finance data for tickers: ('^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX')
+2026-06-18 13:00:12,643 - pipeline - DEBUG - Fetched ^GSPC, 866 rows
+2026-06-18 13:00:12,814 - pipeline - DEBUG - Fetched AAPL, 866 rows
+2026-06-18 13:00:12,977 - pipeline - DEBUG - Fetched NVDA, 866 rows
+2026-06-18 13:00:13,117 - pipeline - DEBUG - Fetched MSFT, 866 rows
+2026-06-18 13:00:13,300 - pipeline - DEBUG - Fetched AVGO, 866 rows
+2026-06-18 13:00:13,545 - pipeline - DEBUG - Fetched MU, 866 rows
+2026-06-18 13:00:13,645 - pipeline - DEBUG - Fetched AMD, 866 rows
+2026-06-18 13:00:13,808 - pipeline - DEBUG - Fetched INTC, 866 rows
+2026-06-18 13:00:13,976 - pipeline - DEBUG - Fetched ORCL, 866 rows
+2026-06-18 13:00:14,111 - pipeline - DEBUG - Fetched AMAT, 866 rows
+2026-06-18 13:00:14,306 - pipeline - DEBUG - Fetched LRCX, 866 rows
+2026-06-18 13:00:14,308 - pipeline - INFO - Yahoo data shape: (866, 11)
+2026-06-18 13:00:14,310 - pipeline - INFO - Cleaning FRED data...
+2026-06-18 13:00:14,311 - pipeline - INFO - FRED clean shape: (0, 0)
+2026-06-18 13:00:14,314 - pipeline - INFO - Cleaning Yahoo data...
+2026-06-18 13:00:14,326 - pipeline - INFO - Yahoo clean shape: (866, 11)
+2026-06-18 13:00:14,327 - pipeline - WARNING - FRED data is empty after cleaning.
+2026-06-18 13:00:14,327 - pipeline - INFO - Generating time series plot to time_series.png
+2026-06-18 13:00:14,715 - pipeline - INFO - Time series plot saved.
+2026-06-18 13:00:14,721 - pipeline - INFO - Computing summary statistics...
+2026-06-18 13:00:14,738 - pipeline - INFO - Running OLS: ^GSPC ~ ['AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 13:00:14,741 - pipeline - INFO - OLS R-squared: 0.9898
+2026-06-18 13:00:14,747 - pipeline - INFO - Generating correlation heatmap to correlation.png
+2026-06-18 13:00:15,134 - pipeline - INFO - Heatmap saved.
+2026-06-18 13:00:15,134 - pipeline - INFO - Pipeline finished successfully.
+2026-06-18 13:00:17,572 - pipeline - INFO - Fetching FRED data for series: ('GDPC1',)
+2026-06-18 13:00:17,572 - pipeline - DEBUG - Fetched GDPC1, 3 observations
+2026-06-18 13:00:17,573 - pipeline - INFO - FRED data shape: (3, 1)
+2026-06-18 13:01:30,193 - pipeline - INFO - Pipeline started.
+2026-06-18 13:01:30,193 - pipeline - INFO - Fetching FRED data for series: ()
+2026-06-18 13:01:30,193 - pipeline - INFO - FRED data shape: (0, 0)
+2026-06-18 13:01:30,194 - pipeline - INFO - Fetching Yahoo Finance data for tickers: ('^GSPC', 'AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX')
+2026-06-18 13:01:30,334 - pipeline - DEBUG - Fetched ^GSPC, 866 rows
+2026-06-18 13:01:30,599 - pipeline - DEBUG - Fetched AAPL, 866 rows
+2026-06-18 13:01:30,719 - pipeline - DEBUG - Fetched NVDA, 866 rows
+2026-06-18 13:01:30,880 - pipeline - DEBUG - Fetched MSFT, 866 rows
+2026-06-18 13:01:31,015 - pipeline - DEBUG - Fetched AVGO, 866 rows
+2026-06-18 13:01:31,198 - pipeline - DEBUG - Fetched MU, 866 rows
+2026-06-18 13:01:31,288 - pipeline - DEBUG - Fetched AMD, 866 rows
+2026-06-18 13:01:31,456 - pipeline - DEBUG - Fetched INTC, 866 rows
+2026-06-18 13:01:31,581 - pipeline - DEBUG - Fetched ORCL, 866 rows
+2026-06-18 13:01:31,761 - pipeline - DEBUG - Fetched AMAT, 866 rows
+2026-06-18 13:01:31,931 - pipeline - DEBUG - Fetched LRCX, 866 rows
+2026-06-18 13:01:31,933 - pipeline - INFO - Yahoo data shape: (866, 11)
+2026-06-18 13:01:31,933 - pipeline - INFO - Cleaning FRED data...
+2026-06-18 13:01:31,933 - pipeline - INFO - FRED clean shape: (0, 0)
+2026-06-18 13:01:31,933 - pipeline - INFO - Cleaning Yahoo data...
+2026-06-18 13:01:31,942 - pipeline - INFO - Yahoo clean shape: (866, 11)
+2026-06-18 13:01:31,942 - pipeline - WARNING - FRED data is empty after cleaning.
+2026-06-18 13:01:31,942 - pipeline - INFO - Generating time series plot to time_series.png
+2026-06-18 13:01:32,323 - pipeline - INFO - Time series plot saved.
+2026-06-18 13:01:32,323 - pipeline - INFO - Computing summary statistics...
+2026-06-18 13:01:32,339 - pipeline - INFO - Running OLS: ^GSPC ~ ['AAPL', 'NVDA', 'MSFT', 'AVGO', 'MU', 'AMD', 'INTC', 'ORCL', 'AMAT', 'LRCX']
+2026-06-18 13:01:32,341 - pipeline - INFO - OLS R-squared: 0.9898
+2026-06-18 13:01:32,347 - pipeline - INFO - Generating correlation heatmap to correlation.png
+2026-06-18 13:01:32,729 - pipeline - INFO - Heatmap saved.
+2026-06-18 13:01:32,729 - pipeline - INFO - Pipeline finished successfully.
+2026-06-18 13:01:36,427 - pipeline - INFO - Fetching FRED data for series: ('GDPC1',)
+2026-06-18 13:01:36,427 - pipeline - DEBUG - Fetched GDPC1, 3 observations
+2026-06-18 13:01:36,427 - pipeline - INFO - FRED data shape: (3, 1)
