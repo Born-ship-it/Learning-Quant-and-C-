@@ -163,3 +163,15 @@
 - **Practice:** Kaggle for modeling, LeetCode for SQL, open-source contributions to dbt packages or financial libraries.
 
 This roadmap is deliberately stacked to build the profile’s full stack layer by layer. The secret is to **always tie a new skill to a concrete project that produces a resume-worthy achievement bullet**, never just learn in isolation. In 2–3 years of sustained effort, you’ll not only match the master profile—you’ll have the evidence to prove it.
+
+
+
+### The Cloud & Data Engineering Core (For Vestas & Capital Four)
+Your profile demands "Scalable data models on Snowflake/Databricks" and "ETL/ELT pipelines."
+
+- Coursera: "Microsoft Azure Data Fundamentals (DP-900)" – Get the conceptual cloud base.
+- Coursera: "Data Engineering, Big Data, and Machine Learning on GCP/AWS" (Pick the Azure/Databricks specialization if available, but frankly, Coursera lags here).
+- CRITICAL EXTERNAL: Databricks Lakehouse Fundamentals (Free on Databricks Academy) – You must have this for Capital Four.
+- CRITICAL EXTERNAL: dbt Fundamentals (Free on dbt Learn) – For the "semantic layer / single version of truth" bullet point.
+- Coursera: "SQL for Data Science" (UC Davis) – Yes, you know SQL, but this covers window functions and query optimization needed for Snowflake.
+
